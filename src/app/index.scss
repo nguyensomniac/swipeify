@@ -446,18 +446,28 @@ videogular  {
 //modals
 .modal-bg {
   position: absolute;
-  height: calc(100% - 44px);
+  height: calc(100% - 57px);
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
   @include zindex-3;
 }
 
+.modal-wrapper  {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 0;
+}
+
 .modal  {
+  height: 100%;
   background-color: #2C2C2C;
   width: 75%;
   margin: 0 auto;
   color: #FFFFFF;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
+
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
