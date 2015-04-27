@@ -393,9 +393,19 @@ videogular  {
   opacity: .75;
   transition: 300ms all ease;
 }
+
 .search-active.search-bar {
   opacity: 1;
 }
+
+.play-navbar .search-bar  {
+  width: 150%;
+}
+
+.play-navbar .search-active.search-bar  {
+  width: 200%;
+}
+
 .search-form  {
   position: relative;
   line-height: 0;

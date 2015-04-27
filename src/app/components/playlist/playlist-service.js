@@ -6,8 +6,6 @@ angular.module('app')
       addSong: function(song, isRightSwipe) {
         song.isRightSwipe = isRightSwipe;
         songs.push(song);
-        console.log('Added!')
-        console.log(Object.keys(songs).length)
       },
       changeSwipe: function(id) {
         for(var i = 0; i < songs.length; i++)  {

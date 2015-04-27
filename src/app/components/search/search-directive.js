@@ -7,12 +7,10 @@ angular.module('app')
       },
       link: function(scope)  {
         scope.search = function()  {
-          console.log('Searching..')
           searchService.setQuery(scope.query);
           var artist = searchService.getArtists();
           artist.details.$promise.then(function(result)  {
             scope.results = result;
-            console.log(result);
             if (result.matchesQuery)  {
               artistService.setCurrentTrack();
               if ($state.includes('playing')) {
