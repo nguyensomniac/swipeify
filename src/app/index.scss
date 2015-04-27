@@ -284,7 +284,6 @@ videogular  {
   padding-top: $card-height-proportion;
   position: relative;
   overflow: hidden;
-  transition: all ease 100ms;
   border-radius: .75rem;
   transform: translate3d(0, 0, 0); //fixes border-radius clipping issue
 }
