@@ -7,12 +7,7 @@
     "gulp-util": "~3.0.2",
     "gulp-sass": "~1.3.0",
     "gulp-load-plugins": "~0.8.0",
-    "wrench": "~1.5.8"
-  },
-  "scripts": {
-    "test": "gulp test"
-  },
-  "devDependencies": {
+    "wrench": "~1.5.8",
     "gulp-autoprefixer": "~2.1.0",
     "gulp-angular-templatecache": "~1.5.0",
     "del": "~1.1.1",
@@ -50,6 +45,12 @@
     "chalk": "~0.5.1",
     "protractor": "~1.7.0",
     "uglify-save-license": "~0.4.1"
+
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
   },
   "engines": {
     "node": ">=0.10.0"

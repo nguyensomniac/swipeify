@@ -4,6 +4,7 @@ $background: #4A4A4A;
 $red: #F2645F;
 
 //typography
+$font-stack: Lato, Calibri, sans-serif;
 $line-height: 1.6;
 
 //mixins
@@ -46,7 +47,7 @@ $line-height: 1.6;
 
 //resets and default setting
 html, body  {
-  font-family: 'Source Sans Pro';
+  font-family: $font-stack;
   font-size: 100%;
   height: 100%;
   background: #4A4A4A;

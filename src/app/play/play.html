@@ -19,7 +19,8 @@
 </nav>
 <div class="modal-bg" ng-click="toggleModal()" ng-show="modalShow === true">
   <div class="modal" ng-click="$event.stopPropagation()">
-    <div class="song-item" ng-repeat="song in savedSongs">
+    <h2>Saved Songs</h2>
+    <div class="song-item" ng-repeat="song in savedSongs | filter: {isRightSwipe: true}">
       {{song.details.ars}} - {{song.details.name}}
     </div>
   </div>
