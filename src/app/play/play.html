@@ -21,7 +21,7 @@
   <div class="modal-wrapper">
     <div class="modal" ng-click="$event.stopPropagation()">
       <h2>Saved Songs</h2>
-      <div class="song-item" ng-repeat="song in savedSongs | filter: {isRightSwipe: true}">
+      <div class="song-item" ng-repeat="song in savedSongs | filter: {isRightSwipe: true}" ng-class-odd="'song-odd'" ng-class-even="'song-even'">
         {{song.details.ars}} - {{song.details.name}}
       </div>
     </div>

@@ -479,9 +479,24 @@ videogular  {
   width: 75%;
   margin: 0 auto;
   color: #FFFFFF;
-  padding: 1.5rem;
   box-sizing: border-box;
 }
+
+h2  {
+  padding: 1.5rem;
+}
+
+.song-item  {
+  padding: .75rem 1.5rem;
+  border-bottom: 3px #4E4E4E solid;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.song-odd {
+  background-color: #181818;
+}
+
 
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
