@@ -1,0 +1,14 @@
+<div class="search-bar">
+  <form class="search-form" ng-submit=search()>
+        <input class="search-form-text" type="text" ng-model="query" placeholder="Search...">
+        <button class="search-btn" type="submit"></button>
+  </form>
+  <div class="results" ng-show="!results.matchesQuery && results.length > 0">
+      <div class="h3">Did you mean:</div>
+      <ul>
+        <li ng-repeat="result in results | limitTo: 5">
+          <a ng-click="startRadio(result)">{{result.name}}</a>
+        </li>
+      </ul>
+  </div>
+</div>

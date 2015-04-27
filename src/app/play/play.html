@@ -1,0 +1,20 @@
+<nav class="play-navbar">
+  <div class="nav-left">
+    <ul>
+      <li><div class="home-btn" ng-click="goHome()"></div></li>
+      <li><search-bar results=results></search-bar></div></li>
+    </ul>
+  <div class="nav-right">
+    <div class="saved-btn" ng-click="toggleModal()">Saved Tracks {{playlistLength()}}</div>
+  </div>
+</nav>
+<div class="modal-bg" ng-click="toggleModal()" ng-show="modalShow === true">
+  <div class="modal" ng-click="$event.stopPropagation()">
+    <div class="song-item" ng-repeat="song in savedSongs">
+      {{song.details.ars}} - {{song.details.name}}
+    </div>
+  </div>
+</div>
+<div class="play-body">
+  <music-card top-track=topTrack right-swipe=rightSwipe left-swipe=leftSwipe></music-card>
+</div>

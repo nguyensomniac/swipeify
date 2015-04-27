@@ -1,0 +1,26 @@
+<div class="music-card">
+    <videogular vg-auto-play="true" vg-complete="swipeLeft()" ng-show="topTrack != null">
+        <div ng-draggabilly events="evts" class="music-card-player">
+            <div class="music-card-image" ng-style="{'background': 'linear-gradient(rgba(0, 0, 0, .15),rgba(0, 0, 0, .15)), linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), url(' + topTrack.images + ')'}"></div>
+                <vg-controls>
+                    <vg-time-display>
+                        <div class="music-card-bar" ng-style="{'-webkit-transform': 'translateX(' + -1 * (timeLeft) / totalTime * 100 + '%)' ,'transform': 'translateX(' + -1 * (timeLeft) / totalTime * 100 + '%)'}"></div>
+                    </vg-time-display>
+                    <vg-time-display class="music-card-countdown" ng-show="timeLeft < 5500">{{timeLeft / 1000 | number: 0}}</vg-time-display>
+                </vg-controls>
+                <div class="music-card-details">
+                    <h2>{{topTrack.details.ars}}</h2>
+                    <h3>{{topTrack.details.name}}</h3>
+                </div>
+        </div>
+        <vg-media vg-src="topTrack.sources" vg-type="audio" vg-native-controls="false"></vg-media>
+        <vg-controls>
+            <vg-play-pause-button></vg-play-pause-button>
+        </vg-controls>
+
+</videogular>
+<div class="swipe-btns">
+    <button class="swipe-btn swipe-left" ng-click="swipeLeft()"></button>
+    <button class="swipe-btn swipe-right" ng-click="swipeRight()"></button>
+</div>
+</div>
