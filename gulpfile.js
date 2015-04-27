@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var connect = require('gulp-connect');
 var wrench = require('wrench');
 
 var options = {

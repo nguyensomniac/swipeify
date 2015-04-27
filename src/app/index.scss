@@ -152,6 +152,22 @@ ul  {
   background-color: #2C2C2C;
 }
 
+.saved-num-circle  {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #34E795;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.saved-num  {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .nav-left {
   float: left;
 }
