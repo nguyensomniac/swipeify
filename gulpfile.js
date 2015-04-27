@@ -31,6 +31,7 @@ gulp.task('default', ['clean'], function () {
     gulp.start('build');
 });
 gulp.task('serveprod', function() {
+  gulp.start('build');
   connect.server({
     root: './dist',
     port: process.env.PORT || 3000, // localhost:5000
