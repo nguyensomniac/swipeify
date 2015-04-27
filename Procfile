@@ -1,1 +1,1 @@
-web: node node_modules/gulp/bin/gulp severprod
+web: node node_modules/gulp/bin/gulp serveprod
