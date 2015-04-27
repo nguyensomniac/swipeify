@@ -9,8 +9,8 @@
                     <vg-time-display class="music-card-countdown" ng-show="timeLeft < 5500">{{timeLeft / 1000 | number: 0}}</vg-time-display>
                 </vg-controls>
                 <div class="music-card-details">
-                    <h2>{{topTrack.details.ars}}</h2>
-                    <h3>{{topTrack.details.name}}</h3>
+                    <div class="card-artist">{{topTrack.details.ars}}</div>
+                    <div class="card-song">{{topTrack.details.name}}</div>
                 </div>
         </div>
         <vg-media vg-src="topTrack.sources" vg-type="audio" vg-native-controls="false"></vg-media>
