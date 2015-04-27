@@ -5,7 +5,10 @@
       <li><search-bar results=results></search-bar></div></li>
     </ul>
   <div class="nav-right">
-    <div class="saved-btn" ng-click="toggleModal()">Saved Tracks
+    <div class="saved-btn" ng-click="toggleModal()">
+      <div class="saved-text">
+        Saved Tracks
+      </div>
       <div class="saved-num-circle">
         <div class="saved-num">
           {{playlistLength()}}
