@@ -12,6 +12,7 @@ angular.module('app')
     $scope.getNewTrack = function() {
       artistService.setCurrentTrack().then(function() {
         $scope.topTrack = artistService.getCurrentTrack();
+        console.log($scope.topTrack.sources);
       });
     }
     $scope.playlistLength = function()  {

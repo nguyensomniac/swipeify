@@ -8,7 +8,6 @@ angular.module('app')
     var trackImage = {};
     var formatName = function(name) {
       //Name is an array of names. If length is 1, return the name. Else, return a comma separated list (with & for last artist)
-      console.log(name);
       function iterate(name, iterator)  {
         if (iterator === 1) { //only 1 name
           return name[0].name
