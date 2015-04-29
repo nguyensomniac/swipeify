@@ -8,6 +8,6 @@ My code is a mess. To make your lives and my life easier here's a quick runthrou
 
 -My CSS is in src/app/index.scss. Don't look at the compiled CSS, it's probably not going to be a good time.
 
-Thanks and sorry my decision to go HAM on a personal project is making your lives more difficult!
+Thanks again!
 
 -Lily
