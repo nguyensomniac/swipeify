@@ -25,7 +25,7 @@ angular.module('app')
       //randomly selects current track to one of an artist's most popular tracks. Returns artist and track data.
       //TODO: make sure tracks are not duplicates
       return currentArtist.images.then(function(result)  {
-        trackImage = result[result.length - 1]['#text'];
+        trackImage = result[result.length - 2]['#text'];
         return currentArtist.topTracks.$promise;
       })
       .then(function(result)  {

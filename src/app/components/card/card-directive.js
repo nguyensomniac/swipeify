@@ -21,11 +21,12 @@ angular.module('app')
           $element.addClass('left-swipe-out');
               $element.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
                 function(e) {
-                $scope.leftSwipe();
-                resetPosition();
+                  if($element.hasClass('left-swipe-out')) {
+                    $scope.leftSwipe();
+                    resetPosition();
+                  }
                 $element.removeClass('left-swipe-out');
                 $element.addClass('left-swipe-in');
-                console.log($element.hasClass('left-swipe-out'));
           });
         }
         $scope.swipeRight = function()  {
@@ -36,11 +37,12 @@ angular.module('app')
           $element.addClass('right-swipe-out');
               $element.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
                 function(e) {
-                $scope.rightSwipe();
-                resetPosition();
+                  if($element.hasClass('right-swipe-out')) {
+                    $scope.rightSwipe();
+                    resetPosition();
+                  }
                 $element.removeClass('right-swipe-out');
                 $element.addClass('right-swipe-in');
-                console.log($element.hasClass('right-swipe-out'));
           });
         }
         $scope.evts = {

@@ -17,7 +17,7 @@ angular.module('app', [
         controller: 'MainCtrl'
       })
       .state('playing', {
-        url: 'playing',
+        url: '/playing',
         templateUrl: 'app/play/play.html',
         controller: 'PlayCtrl'
       })
